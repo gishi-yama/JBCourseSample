@@ -1,0 +1,11 @@
+type: edu
+solution_hidden: true
+files:
+- name: src/Task.java
+  visible: true
+  placeholders:
+  - offset: 148
+    length: 14
+    placeholder_text: ここを変更しましょう
+- name: test/Tests.java
+  visible: false

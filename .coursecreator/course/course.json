@@ -1,0 +1,126 @@
+{
+  "summary" : "Java course.\nCreated: Jul 15, 2020, 10:25:45 AM.",
+  "title" : "JBCourseSample",
+  "authors" : [
+    "Jyukai"
+  ],
+  "programming_language" : "JAVA",
+  "language" : "ja",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "lesson1",
+      "task_list" : [
+        {
+          "name" : "Hello, Java!",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [
+                {
+                  "offset" : 148,
+                  "length" : 10,
+                  "possible_answer" : "\"Hello, Java!\"",
+                  "placeholder_text" : "ここを変更しましょう"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "class HelloJava {\n  public static void main(String[] args) {\n    System.out.println(sayHello());\n  }\n\n  public static String sayHello(){\n    return ここを変更しましょう;\n  }\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport static org.junit.Assert.assertEquals;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    assertEquals(\"Hello, Java!と表示できるようにする\",\n      \"Hello, Java!\", HelloJava.sayHello());\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n<h1>Class Method</h1>\n<p>いえーい</p>\n<div class=\"hint\"> Hints can be added anywhere in task text: type \"hint\" and press Tab. </div>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "solution_hidden" : true,
+          "task_type" : "edu"
+        },
+        {
+          "choiceOptions" : [
+            {
+              "text" : "Correct",
+              "status" : "CORRECT"
+            },
+            {
+              "text" : "Incorrect",
+              "status" : "INCORRECT"
+            }
+          ],
+          "isMultipleChoice" : false,
+          "name" : "task2",
+          "files" : {
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Main {\n   public static void main(String[] args) {\n      // Write your solution here\n   }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>This is a task description file. Its content will be displayed to a learner in the <strong>Task Description</strong> window.</p>\n\n<p>It supports both Markdown and HTML.\nTo toggle the format, you can rename <strong>task.md</strong> to <strong>task.html</strong>, or vice versa.\nThe default task description format can be changed in <strong>Preferences | Tools | Education</strong>, but this will not affect any existing task description files.</p>\n\n<p>The following features are available in <strong>task.md/task.html</strong> which are specific to the EduTools plugin:</p>\n\n<ul>\n<li>Hints can be added anywhere in the task text. Type \"hint\" and press Tab. <div class=\"hint\">Text of your hint</div></li>\n\n<li>You can insert shortcuts in the task description.\nWhile <strong>task.html/task.md</strong> is open, right-click anywhere on the <strong>Editor</strong> tab and choose the <strong>Insert shortcut</strong> option from the context menu.\nFor example: &amp;shortcut:FileStructurePopup;.</li><br>\n\n<li>Insert the &percnt;<code>IDE_NAME</code>&percnt; macro, which will be replaced by the actual IDE name.\nFor example, <strong>%IDE_NAME%</strong>.</li><br>\n\n<li>Insert PSI elements, by using links like <code>&lt;a href=\"psi_element://link.to.element\"&gt;element description&lt;/a&gt;</code>.\nTo get such a link, right-click the class or method and select <strong>Copy Reference</strong>. Then press &amp;shortcut:EditorPaste; to insert the link where appropriate.\nFor example, a <a href=\"psi_element://java.lang.String#contains\">link to the \"contains\" method</a>.</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "choice"
+        },
+        {
+          "name" : "task3",
+          "files" : {
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Main {\n   public static void main(String[] args) {\n      System.out.println(\"Hoge!\");\n   }\n}"
+            },
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "Hoge!\n"
+            }
+          },
+          "description_text" : "<html>\n<p>This is a task description file. Its content will be displayed to a learner in the <strong>Task Description</strong> window.</p>\n\n<p>It supports both Markdown and HTML.\nTo toggle the format, you can rename <strong>task.md</strong> to <strong>task.html</strong>, or vice versa.\nThe default task description format can be changed in <strong>Preferences | Tools | Education</strong>, but this will not affect any existing task description files.</p>\n\n<p>The following features are available in <strong>task.md/task.html</strong> which are specific to the EduTools plugin:</p>\n\n<ul>\n<li>Hints can be added anywhere in the task text. Type \"hint\" and press Tab. <div class=\"hint\">Text of your hint</div></li>\n\n<li>You can insert shortcuts in the task description.\nWhile <strong>task.html/task.md</strong> is open, right-click anywhere on the <strong>Editor</strong> tab and choose the <strong>Insert shortcut</strong> option from the context menu.\nFor example: &amp;shortcut:FileStructurePopup;.</li><br>\n\n<li>Insert the &percnt;<code>IDE_NAME</code>&percnt; macro, which will be replaced by the actual IDE name.\nFor example, <strong>%IDE_NAME%</strong>.</li><br>\n\n<li>Insert PSI elements, by using links like <code>&lt;a href=\"psi_element://link.to.element\"&gt;element description&lt;/a&gt;</code>.\nTo get such a link, right-click the class or method and select <strong>Copy Reference</strong>. Then press &amp;shortcut:EditorPaste; to insert the link where appropriate.\nFor example, a <a href=\"psi_element://java.lang.String#contains\">link to the \"contains\" method</a>.</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "task4",
+          "files" : {
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Main {\n   public static void main(String[] args) {\n      // Write your solution here\n   }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>This is a task description file. Its content will be displayed to a learner in the <strong>Task Description</strong> window.</p>\n\n<p>It supports both Markdown and HTML.\nTo toggle the format, you can rename <strong>task.md</strong> to <strong>task.html</strong>, or vice versa.\nThe default task description format can be changed in <strong>Preferences | Tools | Education</strong>, but this will not affect any existing task description files.</p>\n\n<p>The following features are available in <strong>task.md/task.html</strong> which are specific to the EduTools plugin:</p>\n\n<ul>\n<li>Hints can be added anywhere in the task text. Type \"hint\" and press Tab. <div class=\"hint\">Text of your hint</div></li>\n\n<li>You can insert shortcuts in the task description.\nWhile <strong>task.html/task.md</strong> is open, right-click anywhere on the <strong>Editor</strong> tab and choose the <strong>Insert shortcut</strong> option from the context menu.\nFor example: &amp;shortcut:FileStructurePopup;.</li><br>\n\n<li>Insert the &percnt;<code>IDE_NAME</code>&percnt; macro, which will be replaced by the actual IDE name.\nFor example, <strong>%IDE_NAME%</strong>.</li><br>\n\n<li>Insert PSI elements, by using links like <code>&lt;a href=\"psi_element://link.to.element\"&gt;element description&lt;/a&gt;</code>.\nTo get such a link, right-click the class or method and select <strong>Copy Reference</strong>. Then press &amp;shortcut:EditorPaste; to insert the link where appropriate.\nFor example, a <a href=\"psi_element://java.lang.String#contains\">link to the \"contains\" method</a>.</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "theory"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "buildscript {\n    repositories {\n        mavenCentral()\n    }\n}\n\ndef printOutput(def output) {\n    return tasks.create(\"printOutput\") {\n        for (line in output.toString().readLines()) {\n            println \"#educational_plugin\" + line\n        }\n    }\n}\n\nsubprojects {\n    apply plugin: 'application'\n    apply plugin: 'java'\n\n    sourceCompatibility = 1.8\n\n    repositories {\n        mavenCentral()\n    }\n\n    dependencies {\n        testCompile group: 'junit', name: 'junit', version: '4.12'\n    }\n\n    sourceSets {\n        main {\n            java.srcDir 'src'\n        }\n        test {\n            java.srcDir 'test'\n        }\n    }\n\n    mainClassName = project.hasProperty(\"mainClass\") ? project.getProperty(\"mainClass\") : \"\"\n\n    def runOutput = new ByteArrayOutputStream()\n    tasks.run.setStandardOutput(runOutput)\n    tasks.run.doLast { printOutput(runOutput) }\n}\n\nproject(':util') {\n    dependencies {\n        compile group: 'junit', name: 'junit', version: '4.12'\n    }\n}\n\nconfigure(subprojects.findAll {it.name != 'util'}) {\n  dependencies {\n    compile project(':util').sourceSets.main.output\n    testCompile project(':util').sourceSets.test.output\n  }\n}\n"
+    }
+  ],
+  "version" : 11
+}
